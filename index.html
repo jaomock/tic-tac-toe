@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./styles.css">
+    <title>Tic tac toe</title>
+</head>
+<body>
+    <div class="container">
+    <div class="header">
+        <h2>Tic-Tac-Toe</h2>
+    </div>
+    <div class="btnz">
+        <button id = 'btnz' onclick="render()">Start</button>
+    </div>
+    <div class="belowHeader">
+        <h4 id="topText"></h4>
+    </div>
+    </div>
+    <div class="containerTwo">
+    <div class="game">
+        <div class="squares" id="b0" data-1></div>
+        <div class="squares" id="b1" data-2></div>
+        <div class="squares" id="b2" data-3></div>
+        <div class="squares" id="b3" data-4></div>
+        <div class="squares" id="b4" data-5></div>
+        <div class="squares" id="b5" data-6></div>
+        <div class="squares" id="b6" data-7></div>
+        <div class="squares" id="b7" data-8></div>
+        <div class="squares" id="b8" data-9></div>
+    </div>
+    </div>
+    <div class="containerThree">
+        <section class="sc" id="sc1">✖ Score</section>
+        <section class="sc" id="sc2">Ties</section>
+        <section class="sc" id="sc3">〇 Score</section>
+    </div>
+    <div class="winningModal">
+        <p class="gz" id="gzId">Draw!</p>
+        <h3 class="sign" id="signId"></h3>
+        <button class="next" onclick="restart()">Next Round</button>
+    </div>
+    
+</body>
+<script src="./apps.js"></script>
+</html>
